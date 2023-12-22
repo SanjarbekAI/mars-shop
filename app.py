@@ -11,10 +11,10 @@ env.read_env()
 BOT_TOKEN = env.str("TOKEN")
 
 storage = MemoryStorage()
-bot = Bot(token=BOT_TOKEN)
+bot = Bot(token=BOT_TOKEN, proxy="http://proxy.server:3128")
 dp = Dispatcher(bot, storage=storage)
 
-# pip install environs
+
 @dp.message_handler(commands="start")
 async def start_handler(message: types.Message):
     text = "Botimizga xush kelibsiz."
