@@ -4,3 +4,4 @@ config.py
 test.py
 .env
 __pycache__
+shop.db
