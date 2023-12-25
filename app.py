@@ -17,7 +17,6 @@ env.read_env()
 
 BOT_TOKEN = env.str("TOKEN")
 PROXY = env.str("PROXY")
-DB_NAME = env.str("DB_NAME")
 
 storage = MemoryStorage()
 bot = Bot(token=BOT_TOKEN, proxy=PROXY)
