@@ -1,7 +1,7 @@
 import sqlite3
 
 
-conn = sqlite3.connect('shop.db')
+conn = sqlite3.connect('./sql/shop.db')
 cursor = conn.cursor()
 
 # query = """
@@ -22,7 +22,7 @@ info TEXT NOT NULL,
 photo TEXT NOT NULL,
 price REAL NOT NUll,
 status TEXT,
-chat_id INTEGER NOT NULL 
+chat_id INTEGER NOT NULL
 )
 """
 

@@ -12,3 +12,9 @@ user_main_menu = ReplyKeyboardMarkup(
         ]
     ], resize_keyboard=True
 )
+
+phone_share = ReplyKeyboardMarkup(
+    keyboard=[[
+        KeyboardButton(text="☎️ Telefon raqamni yuborish", request_contact=True)
+    ]], resize_keyboard=True
+)

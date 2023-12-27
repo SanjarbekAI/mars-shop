@@ -6,3 +6,9 @@ class ProductAddState(StatesGroup):
     price = State()
     photo = State()
     info = State()
+
+
+class RegisterState(StatesGroup):
+    phone_number = State()
+    login = State()
+    password = State()
